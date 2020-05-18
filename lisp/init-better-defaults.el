@@ -35,6 +35,11 @@
 (global-auto-revert-mode t)
 
 
+;; 关闭系统提示音
+(setq visible-bell 0)
+
+
+
 ;; 自动变更周期
 ;; （setq auto-revert-interval 3)
 
@@ -254,7 +259,7 @@
   ("C-c M-i" . dumb-jump-go-prompt)
   :init
   ;; 使用ivy代替多个选项的默认弹出窗口
-  (setq dumb-jump-selector 'ivy)
+;;(setq dumb-jump-selector 'ivy)
   ;; 如果未找到默认项目,则更改默认项目
   (setq dumb-jump-default-project "~")
   )

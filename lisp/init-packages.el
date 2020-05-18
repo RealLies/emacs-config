@@ -25,7 +25,7 @@
 			   ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")
 			   )
 	)
-  ) 
+  )
 
 
 (unless (package-installed-p 'use-package)
@@ -39,16 +39,16 @@
 (setq use-package-always-ensure t)
 
 
-;; 自动更新插件
-(use-package auto-package-update
-  :if (not (daemonp))
-  :custom
-  (auto-package-update-interval 7) ;; in days
-  (auto-package-update-prompt-before-update t)
-  (auto-package-update-delete-old-versions t)
-  (auto-package-update-hide-results t)
-  :config
-  (auto-package-update-maybe))
+;; ;; 自动更新插件
+;; (use-package auto-package-update
+;;   :if (not (daemonp))
+;;   :custom
+;;   (auto-package-update-interval 7) ;; in days
+;;   (auto-package-update-prompt-before-update t)
+;;   (auto-package-update-delete-old-versions t)
+;;   (auto-package-update-hide-results t)
+;;   :config
+;;   (auto-package-update-maybe))
 
 
 

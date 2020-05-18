@@ -85,5 +85,23 @@
 
 
 
+
+
+
+
+;; 插入图片插件
+(use-package org-download
+	  :ensure t 
+	  ;;将截屏功能绑定到快捷键：Ctrl + Shift + Y
+	  :bind
+	  ("C-c o s" . org-download-screenshot)
+	  ("C-c o d" . org-download-yank)
+	  :config
+	  (require 'org-download)
+	  ;; Drag and drop to Dired
+	  (add-hook 'dired-mode-hook 'org-download-enable)
+	  )
+
+(setq org-image-actual-width (/ (display-pixel-width) 3))
 (provide 'init-org)
 ;;; init-org.el ends here

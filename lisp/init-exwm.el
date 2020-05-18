@@ -64,7 +64,7 @@
   (setq aw-dispatch-always t)
 )
 
-;; 选中窗口黄金比例
+;; ;; 选中窗口黄金比例
 ;; (use-package golden-ratio
 ;;   :ensure t
 ;;   :init
@@ -85,8 +85,13 @@
 
 
 
-(display-battery-mode 1)
-(display-time-mode 1)
+
+
+
+
+
+
+
 
 (provide 'init-exwm)
 ;;; init-exwm.el ends here

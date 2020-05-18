@@ -43,11 +43,18 @@
 ;; )
 
 
-(use-package dracula-theme
+;; (use-package dracula-theme
+;;   :defer 1
+;;   :init
+;;   (load-theme 'dracula t)
+;;   )
+
+
+(use-package doom-themes
   :defer 1
   :init
-  (load-theme 'dracula t)
-  )
+  (load-theme 'doom-dracula t)
+)
 
 
 (provide 'init-theme)

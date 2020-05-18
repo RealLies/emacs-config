@@ -11,11 +11,14 @@
   :ensure t
   :config
   (dashboard-setup-startup-hook)
+  :bind
+  ("C-c d b" . dashboard-refresh-buffer)
   :init
   (setq dashboard-banner-logo-title "Hello World")
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
-)
+  (require 'dashboard)
+  )
 
 
 

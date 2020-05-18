@@ -8,12 +8,13 @@
   ;; English font
   (set-face-attribute
    'default nil
-   :font (font-spec :family "Source Code Pro"
+   ;; :font (font-spec :family "Source Code Pro"
+   :font (font-spec :family "Inconsolata"
 ;;   :font (font-spec :family "PingFang SC Bold"
                     :weight 'normal
                     :slant 'normal
 		    :width 'normal
-                    :size 12))
+                    :size 14))
   
   ;; Chinese font
   (if (display-graphic-p)

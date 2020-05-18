@@ -15,6 +15,8 @@
 
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+
 (require 'init-packages)           ;; 插件源管理
 (require 'init-ui)                 ;; 视觉层配置
 (require 'init-better-defaults)    ;; 增强内置功能
@@ -35,25 +37,22 @@
 (require 'init-icon)               ;; emacs的图标设置
 (require 'init-font)               ;; emacs字体设置
 (require 'init-googletranslate)    ;; emacs谷歌翻译
+;;(require 'init-eaf)                ;; emacs 的而eaf设置
 
 (provide 'init)
+
+
+
 ;;; init.el ends here
-
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-package-update-delete-old-versions t)
- '(auto-package-update-hide-results t)
- '(auto-package-update-interval 7)
- '(auto-package-update-prompt-before-update t)
- '(company-tabnine-max-num-results 9 t)
+ '(company-tabnine-max-num-results 9)
  '(flycheck-python-pycompile-executable "python3")
- '(lsp-python-executable-cmd "python3" t)
  '(package-selected-packages
-   '(treemacs-persp treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil lsp-treemacs sudo-edit pyim yasnippet which-key vterm use-package undo-tree typescript-mode string-inflection smartparens rust-mode rainbow-delimiters quickrun ox-twbs org-drill org-bullets org-brain ob-rust neotree lsp-ui lsp-python-ms json-mode iedit htmlize highlight-indent-guides google-translate format-all flycheck expand-region emmet-mode dumb-jump dracula-theme doom-modeline diminish dashboard counsel company-tabnine company-lsp auto-package-update ace-window))
+   '(company-box tabbar centaur-tabs yasnippet which-key vterm use-package typescript-mode treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil sudo-edit string-inflection smartparens rust-mode rainbow-delimiters quickrun pyim ox-twbs org-drill org-download org-bullets org-brain ob-rust lsp-ui lsp-treemacs lsp-python-ms json-mode iedit htmlize highlight-indent-guides google-translate format-all flycheck expand-region emmet-mode dumb-jump doom-themes doom-modeline diminish dashboard counsel company-tabnine company-lsp))
  '(python-indent-offset 4)
  '(python-shell-interpreter "python3"))
 (custom-set-faces
